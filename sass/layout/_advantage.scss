@@ -1,0 +1,35 @@
+.advantage {
+
+    &__list {
+        display: flex;
+        text-align: left;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__icon-wrapper {
+        text-align: center;
+        background: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin-top: 30px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $third-color;
+        padding-top: 10px;
+    }
+}

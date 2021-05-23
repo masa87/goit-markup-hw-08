@@ -1,0 +1,24 @@
+@import './utils/variables';
+
+@import './base/common';
+@import './base/container';
+
+
+@import './components/main-header';
+@import './components/icon';
+@import './components/btn';
+@import './components/logo';
+@import './components/social-list';
+@import './components/backdrop';
+
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/modal-window';
+@import './layout/advantage';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+
+@import './pages/porftolio';

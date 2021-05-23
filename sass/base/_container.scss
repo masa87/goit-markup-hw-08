@@ -1,0 +1,55 @@
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+.container {
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .header & {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .hero & {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .advantage & {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .team & {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+    }
+
+    .clients & {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+    }
+
+    .footer & {
+        display: flex;
+        padding: 60px 15px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .nav & {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
