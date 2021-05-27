@@ -3,9 +3,10 @@
 
     &__list {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     &__item {
@@ -18,9 +19,9 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+        // &:not(:last-child) {
+        //     margin-right: 30px;
+        // }
     }
 
     &__header {

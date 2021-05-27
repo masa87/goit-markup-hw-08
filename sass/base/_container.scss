@@ -1,11 +1,5 @@
-// .section {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
-
 .container {
     align-items: center;
-    width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -17,26 +11,32 @@
     }
 
     .hero & {
+        height: 400px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .advantage & {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-left: 15px;
     }
 
     .team & {
-        padding-top: 94px;
+        padding-top: 60px;
         padding-bottom: 94px;
         text-align: center;
     }
 
     .clients & {
-        padding-top: 94px;
+        padding-top: 60px;
         padding-bottom: 94px;
         text-align: center;
+        padding-left: 0;
     }
 
     .footer & {
@@ -47,9 +47,15 @@
     }
 
     .nav & {
-        width: 1200px;
+        width: 100vw;
         margin: 0 auto;
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+}
+
+@media screen and (max-width: $breakpoint-desktop) {
+    .container {
+        width: 100vw;
     }
 }

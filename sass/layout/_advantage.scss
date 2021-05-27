@@ -2,11 +2,12 @@
 
     &__list {
         display: flex;
+        flex-direction: column;
         text-align: left;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
+    &__item {
+        margin-bottom: 30px;
     }
 
     &__icon-wrapper {
@@ -23,6 +24,7 @@
         text-transform: uppercase;
         color: $secondary-color;
         margin-top: 30px;
+        text-align: center;
     }
 
     &__description {
@@ -33,3 +35,36 @@
         padding-top: 10px;
     }
 }
+
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .advantage {
+        margin-left: -15px;
+    }
+
+    .advantage__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .advantage__item {
+        flex-basis: calc(100% / 2 - 15px);
+        margin-left: 15px;
+    }
+}
+
+// @media screen and (min-width: $breakpoint-desktop) {
+
+//     .advantage__list {
+//         display: block;
+//     }
+
+//     .advantage____item:not(:last-child) {
+//         margin-right: 30px;
+//     }
+
+//     .advantage__header {
+//         text-align: left;
+//     }
+
+// }
