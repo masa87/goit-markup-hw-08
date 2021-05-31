@@ -4,6 +4,11 @@
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 8px;
     }
 
     &__item:not(:last-child) {
@@ -70,6 +75,8 @@
     }
 
     &__img {
+        width: 100%;
+        height: auto;
         transition: transform 250ms ease-in;
     }
 
@@ -121,4 +128,32 @@
     }
 }
 
-@media screen and (min-width: 1200px) {}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+    .nav {
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+
+    .cards {
+        margin-top: -30px;
+
+        &__item {
+            flex-basis: calc(100% / 2 - 30px);
+
+            &:not(:nth-child(2n)) {
+                margin-right: 27px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .nav {
+        &__list {
+            // flex-wrap: nowrap;
+        }
+    }
+}

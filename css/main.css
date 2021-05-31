@@ -1347,6 +1347,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__item {
+  margin-bottom: 8px;
 }
 
 .nav__item:not(:last-child) {
@@ -1417,6 +1423,8 @@ img {
 }
 
 .cards__img {
+  width: 100%;
+  height: auto;
   -webkit-transition: -webkit-transform 250ms ease-in;
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
@@ -1478,5 +1486,22 @@ img {
 .description__text {
   padding-left: 24px;
   padding-right: 45px;
+}
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .nav__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards {
+    margin-top: -30px;
+  }
+  .cards__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+  .cards__item:not(:nth-child(2n)) {
+    margin-right: 27px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

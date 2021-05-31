@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Zadanie domowe #7 - portfolio GOIT POLSKA</title>
+    <title>Zadanie domowe #8 - portfolio GOIT POLSKA</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -48,6 +48,47 @@
                             <use xlink:href=" ./images/symbol-defs.svg#smartphone" />
                         </svg>+48 111 111 111</a>
                 </li>
+            </ul>
+            <button mobile-menu-open type="button" class="icon-menu__button">
+                <svg class="icon-menu icon" width="24" height="16">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div mobile-menu class="mobile-menu mobile-menu--is-hidden">
+            <div mobile-menu-close class="modal__btn">
+                <button type="button" class="btn__close">x</button>
+            </div>
+            <ul class="menu-list">
+                <li class="menu__item list">
+                    <a class="menu__link menu__link--current link" href="index.html">Agencja</a>
+                </li>
+                <li class="menu__item list">
+                    <a class="menu__link link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu__item list">
+                    <a class="menu__link link" href="#">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="mobile-contacts">
+                <li class="contacts__item list">
+                    <a class="contacts__link contacts__link--accent link" href="tel:+48111111111">
+                        +48 111 111 111</a>
+                </li>
+                <li class="contacts__item list">
+                    <a class="contacts__link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-social">
+                <li class="mobile-social__item list">
+                    <a href="" class="mobile-social__link link">Instagram</a></li>
+                <li class="mobile-social__item list">
+                    <a href="" class="mobile-social__link link">Twitter</a></li>
+                <li class="mobile-social__item list">
+                    <a href="" class="mobile-social__link link">Facebook</a></li>
+                <li class="mobile-social__item list">
+                    <a href="" class="mobile-social__link link">LinkedIn</a></li>
             </ul>
         </div>
     </header>
