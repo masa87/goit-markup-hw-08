@@ -145,3 +145,9 @@
     margin-top: 30px;
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    .modal {
+        width: 470px;
+    }
+}
