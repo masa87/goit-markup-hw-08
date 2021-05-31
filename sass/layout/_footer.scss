@@ -1,14 +1,6 @@
 .footer {
     background-color: #2f303a;
 
-    & .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     &__logo--white {
         color: #fff;
     }
@@ -22,7 +14,6 @@
         color: #fff;
         margin-bottom: 20px;
     }
-
 }
 
 .address {
@@ -80,7 +71,6 @@
     }
 }
 
-
 .newsletter {
     margin-top: 60px;
     width: 100%;
@@ -114,20 +104,61 @@
     }
 }
 
-@media screen and (min-width: $breakpoint-tablet) {
-    .footer .container {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
+@media (min-width: 480px) and (max-width: 1199px) {
+    .footer {
 
-    .footer-social {
-        margin-top: 0;
-        align-self: flex-start;
+        & .container {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        &-social {
+            margin-top: 0;
+            align-self: flex-start;
+        }
+
+        &.newsletter {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: flex;
+
+        & .container {
+            text-align: left;
+        }
+
+        &-social {
+            margin-top: 0;
+        }
     }
 
     .newsletter {
-        flex-grow: 1;
+        width: auto;
+        margin-top: 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__input {
+            width: 358px;
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        &__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
     }
 }

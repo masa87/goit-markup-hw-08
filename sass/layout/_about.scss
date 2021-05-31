@@ -3,7 +3,7 @@
     display: none;
 
     & .container {
-        // width: 1200px;
+        width: 1200px;
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
@@ -12,7 +12,6 @@
 
     &__list {
         display: flex;
-        flex-direction: column;
         padding-top: 50px;
     }
 
@@ -41,5 +40,11 @@
         text-transform: uppercase;
         color: #FFFFFF;
         z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about {
+        display: flex;
     }
 }
