@@ -48,7 +48,7 @@
     }
 
     .nav & {
-        width: 100vw;
+        width: auto;
         margin: 0 auto;
         padding-top: 94px;
         padding-bottom: 94px;
@@ -62,8 +62,6 @@
         .hero & {
             height: auto;
         }
-
-        .clients & {}
 
         .footer & {
             flex-direction: row;

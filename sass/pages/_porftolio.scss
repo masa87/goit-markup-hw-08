@@ -9,9 +9,6 @@
 
     &__item {
         margin-bottom: 8px;
-    }
-
-    &__item:not(:last-child) {
         margin-right: 8px;
     }
 
@@ -43,13 +40,20 @@
 }
 
 .cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-left: -15px;
+
+        // background-color: black;
+    }
 
     &__item {
         margin-bottom: 30px;
-        align-self: flex-start;
         background: #FFFFFF;
         cursor: pointer;
 
@@ -64,9 +68,7 @@
             transform: translateY(0);
         }
 
-        &:not(:nth-child(3n)) {
-            margin-right: 27px;
-        }
+
     }
 
     &__wrapper {
@@ -128,32 +130,38 @@
     }
 }
 
-
-@media (min-width: 480px) and (max-width: 1200px) {
-    .nav {
-        &__list {
-            flex-wrap: wrap;
-        }
-    }
-
+@media screen and (max-width: 680px) {
     .cards {
-        margin-top: -30px;
 
         &__item {
-            flex-basis: calc(100% / 2 - 30px);
-
-            &:not(:nth-child(2n)) {
-                margin-right: 27px;
-            }
+            flex-basis: calc(100% - 15px);
+            max-width: 100%;
+            margin-left: 15px;
+            margin-bottom: 30px;
         }
     }
 }
 
+@media (min-width: 680px) and (max-width: 1129px) {
+    .cards {
 
-@media screen and (min-width: 1200px) {
-    .nav {
-        &__list {
-            // flex-wrap: nowrap;
+        &__item {
+            flex-basis: calc(100%/2 - 15px);
+            max-width: 100%;
+            margin-left: 15px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .cards {
+        &__item {
+            align-self: flex-start;
+
+            &:not(:nth-child(3n)) {
+                margin-right: 27px;
+            }
         }
     }
 }
