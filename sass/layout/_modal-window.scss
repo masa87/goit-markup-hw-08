@@ -150,7 +150,7 @@
 
 @media screen and (max-width: 600px) {
     .modal {
-        width: 470px;
+        max-width: 100%;
     }
 
     .policy__text {

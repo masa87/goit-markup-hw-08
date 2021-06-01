@@ -196,6 +196,7 @@
         &__list {
             min-width: 200px;
             max-width: 254px;
+            margin-left: 50px;
         }
     }
 
@@ -228,12 +229,15 @@
         &__list {
             flex-wrap: wrap;
             margin-left: 20px;
-            text-align: center;
+            justify-content: flex-end;
         }
 
         &__item {
             margin-top: 5px;
 
+            &:last-child {
+                margin-right: 27px;
+            }
         }
     }
 
