@@ -199,9 +199,17 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-menu {
+  width: 100%;
+  height: 100%;
+}
+
 .icon-menu__button {
+  width: 40px;
+  height: 40px;
   padding: 0;
   border: none;
+  background: white;
 }
 
 .icon-menu:hover,
@@ -242,6 +250,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 13px;
+  font-weight: 500;
   top: 8px;
   right: 8px;
   height: 30px;
@@ -251,6 +261,7 @@ img {
   color: black;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -1371,28 +1382,29 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .nav__item {
+  width: 128px;
+  height: 38px;
   margin-bottom: 8px;
   margin-right: 8px;
+  text-align: center;
+  background: #F5F4FA;
 }
 
 .nav__btn {
   font-weight: 500;
-  padding: 6px 22px;
+  width: 100%;
+  height: 100%;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  background: #F5F4FA;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1415,9 +1427,6 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1522,6 +1531,14 @@ img {
   }
 }
 
+@media screen and (min-width: 710px) {
+  .nav__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (min-width: 680px) and (max-width: 1129px) {
   .cards__item {
     -ms-flex-preferred-size: calc(100%/2 - 15px);
@@ -1533,6 +1550,11 @@ img {
 }
 
 @media screen and (min-width: 1130px) {
+  .cards__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .cards__item {
     -ms-flex-item-align: start;
         align-self: flex-start;

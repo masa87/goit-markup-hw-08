@@ -2,25 +2,29 @@
 
     &__list {
         display: flex;
-        justify-content: center;
         margin-bottom: 50px;
         flex-wrap: wrap;
     }
 
     &__item {
+        width: 128px;
+        height: 38px;
         margin-bottom: 8px;
         margin-right: 8px;
+        text-align: center;
+        background: #F5F4FA;
     }
 
     &__btn {
         font-weight: 500;
-        padding: 6px 22px;
+        width: 100%;
+        height: 100%;
         font-size: 16px;
         line-height: 1.625;
         text-align: center;
         letter-spacing: 0.03em;
         color: $secondary-color;
-        background: #F5F4FA;
+
         border: none;
         border-radius: 4px;
         cursor: pointer;
@@ -44,12 +48,10 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
         margin-top: 30px;
         margin-left: -15px;
 
-        // background-color: black;
     }
 
     &__item {
@@ -67,8 +69,6 @@
         &:hover .description {
             transform: translateY(0);
         }
-
-
     }
 
     &__wrapper {
@@ -142,6 +142,12 @@
     }
 }
 
+@media screen and (min-width: 710px) {
+    .nav__list {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 680px) and (max-width: 1129px) {
     .cards {
 
@@ -156,6 +162,11 @@
 
 @media screen and (min-width: 1130px) {
     .cards {
+
+        &__list {
+            justify-content: center;
+        }
+
         &__item {
             align-self: flex-start;
 
